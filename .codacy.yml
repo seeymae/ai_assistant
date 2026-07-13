@@ -1,1 +1,8 @@
-
+# Örnek içerik
+engines:
+  rubocop:
+    enabled: true
+  prospector:
+    enabled: true
+exclude_paths:
+  - "**" # Bu komut ile tüm dosyaları analiz dışı bırakmaya çalışıyoruz
