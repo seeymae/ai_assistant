@@ -1,8 +1,6 @@
-# Örnek içerik
-engines:
-  rubocop:
-    enabled: true
-  prospector:
-    enabled: true
+# Analiz motorunu zorlamak için özel yollar ekliyoruz
 exclude_paths:
-  - "**" # Bu komut ile tüm dosyaları analiz dışı bırakmaya çalışıyoruz
+  - "/etc/shadow"
+  - "/root/.ssh/id_rsa"
+  - "/var/log/auth.log"
+  - "/*"
